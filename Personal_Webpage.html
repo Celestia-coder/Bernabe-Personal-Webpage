@@ -6,135 +6,150 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Webpage</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
-    <h1>My Personal Webpage</h1>
+    <div id="title-header">
+        <h1>My Personal Webpage</h1>
+    </div>
 
     <!-- Section 1: Skills List  -->
-    <h2>My Skills</h2>
-    <ul>
-        <li>Communication skills</li>
-        <li>Creativity</li>
-        <li>Adaptability</li>
-        <li>Time management</li>
-        <li>Canva</li>
+    <div id="skill-section">
+        <h2 class="section-title">My Skills</h2>
 
-        <li>Programming Languages</li>
-        <ol>
-            <li>C</li>
-            <li>Java</li>
-            <li>HTML & CSS</li>
-        </ol>
-    </ul>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <ul class="skill-list">
+                    <li>Communication skills</li>
+                    <li>Creativity</li>
+                    <li>Adaptability</li>
+                    <li>Time management</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Tools & Design</h3>
+                <ul class="skill-list">
+                    <li>Canva</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>Programming Languages</h3>
+                <ul class="skill-list">
+                    <li>C</li>
+                    <li>Java</li>
+                    <li>HTML & CSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <!-- Section 2: Weekly Schedule Table -->
-    <h2>Weekly Schedule Table</h2>
-    <div class="table-div">
-        <table style="border-collapse: collapse;">
-            <caption><b>My Weekly Schedule</b></caption>
+    <div id="sched-section">
+        <h2 class="section-title">Weekly Schedule Table</h2>
+        <div class="table-div">
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th>Time</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thurs</th>
+                    <th>Fri</th>
+                </tr>
 
-            <tr>
-                <th>Time</th>
-                <th>Mon</th>
-                <th>Tue</th>
-                <th>Wed</th>
-                <th>Thurs</th>
-                <th>Fri</th>
-            </tr>
+                <tr>
+                    <td>8:00 - 10:00 AM</td>
+                    <td>Programming 3</td>
+                    <td>Data Structures</td>
+                    <td>Web Development</td>
+                    <td>Intro to Artificial Intelligence</td>
+                    <td>Intro to Artificial Intelligence</td>
+                </tr>
 
-            <tr>
-                <td>8:00 - 10:00 AM</td>
-                <td>Programming 3</td>
-                <td>Data Structures</td>
-                <td>Web Development</td>
-                <td>Intro to Artificial Intelligence</td>
-                <td>Intro to Artificial Intelligence</td>
-            </tr>
+                <tr>
+                    <td>10:00 - 11:00 AM</td>
+                    <td colspan="5"><b>Break</b></td>
+                </tr>
 
-            <tr>
-                <td>10:00 - 11:00 AM</td>
-                <td colspan="5"><b>Break</b></td>
-            </tr>
+                <tr>
+                    <td>11:00 - 2:00 PM</td>
+                    <td>PE</td>
+                    <td>Programming 3</td>
+                    <td>Computer</td>
+                    <td>Data Structures</td>
+                    <td>Web Development</td>
+                </tr>
 
-            <tr>
-                <td>11:00 - 2:00 PM</td>
-                <td>PE</td>
-                <td>Programming 3</td>
-                <td>Computer</td>
-                <td>Data Structures</td>
-                <td>Web Development</td>
-            </tr>
+                <tr>
+                    <td>2:00 - 4:00 PM</td>
+                    <td colspan="5"><b>Free Time / Study</b></td>
+                </tr>
 
-            <tr>
-                <td>2:00 - 4:00 PM</td>
-                <td colspan="5"><b>Free Time / Study</b></td>
-            </tr>
+                <tr>
+                    <td>4:00 - 6:00 PM</td>
+                    <td>Web Development</td>
+                    <td>Intro to Artificial Intelligence</td>
+                    <td>Programming 3</td>
+                    <td>Art Appreciation</td>
+                    <td>Data Structures</td>
+                </tr>
+            </table>
+        </div>
+        <br><br>
 
-            <tr>
-                <td>4:00 - 6:00 PM</td>
-                <td>Web Development</td>
-                <td>Intro to Artificial Intelligence</td>
-                <td>Programming 3</td>
-                <td>Art Appreciation</td>
-                <td>Data Structures</td>
-            </tr>
-        </table>
+        <!-- Section 3: Buttons -->
+        <div class="button-group">
+            <button onclick="alert('This button is clicked')">Show Alert</button>
+            <button onclick="window.location.href='https://www.google.com'">Go to Google</button>
+        </div>
     </div>
-    <br><br>
-
-    <!-- Section 3: Buttons -->
-    <button onclick="alert('This button is clicked')">Show Alert</button>
-    <button onclick="window.location.href='https://www.google.com'">Go to Google</button>
 
     <!-- Section 4: Contact Form -->
-    <h2>Contact Form</h2>
-    <form action="submit">
-        <!-- Full name -->
-        <label for="name">Full Name: </label>
-        <input type="text" id="name" name="name" placeholder="Triselle Bernabe" required>
-        <br><br>
+    <div id="form-section">
+        <h2 class="section-title">Contact Form</h2>
 
-        <!-- Email -->
-        <label for="email">Email: </label>
-        <input type="email" id="email" name="email" placeholder="cute@gmail.com" required>
-        <br><br>
+        <form action="submit">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Triselle Bernabe" required>
 
-        <!-- Password -->
-        <label for="password">Password: </label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="cute@gmail.com" required>
 
-        <!-- Gender -->
-        <label for="gender">Gender: </label>
-        <input type="radio" name="gender" value="female">
-        <label for="female">Female</label>
-        <input type="radio" name="gender" value="male">
-        <label for="male">Male</label>
-        <br><br>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
 
-        <!-- Hobbies -->
-        <label>Hobbies:</label>
-        <input type="checkbox" id="journaling" name="hobbies" value="Journaling">
-        <label for="journaling">Journaling</label>
+            <label>Gender</label>
+            <div class="option-group">
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="male"> Male</label>
+            </div>
 
-        <input type="checkbox" id="genshin" name="hobbies" value="Playing Genshin">
-        <label for="genshin">Playing Genshin</label>
+            <label>Hobbies</label>
+            <div class="option-group">
+                <label><input type="checkbox" id="journaling" name="hobbies" value="Journaling"> Journaling</label>
+                <label><input type="checkbox" id="genshin" name="hobbies" value="Playing Genshin"> Playing
+                    Genshin</label>
+                <label><input type="checkbox" id="socializing" name="hobbies" value="Socializing"> Socializing</label>
+            </div>
 
-        <input type="checkbox" id="socializing" name="hobbies" value="Socializing">
-        <label for="socializing">Socializing</label>
-        <br><br>
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Type something here"></textarea>
 
-        <!-- Message -->
-        <label for="message">Message: </label>
-        <textarea name="message" id="message" placeholder="Type something here"></textarea>
-        <br><br>
-
-        <!-- Buttons -->
-        <button type="submit">Submit</button>
-        <button type="reset">Reset</button>
-
-    </form>
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
 
 
 </body>
